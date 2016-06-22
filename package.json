@@ -4,7 +4,7 @@
   "description": "a homework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node ./test/test.js --harmony",
     "dev": "webpack-dev-server --port 3000 --devtool eval --progress --colors --hot --content-base dist",
     "build": "./node_modules/.bin/webpack",
     "start": "webpack ./server/app-bundle.js ./server/app.js && node server/app-bundle.js"
@@ -28,6 +28,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "alt": "^0.18.4",
     "express": "^4.14.0",
     "material-ui": "^0.15.1",
     "react": "^15.1.0",

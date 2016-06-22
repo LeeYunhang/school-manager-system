@@ -12,10 +12,6 @@ class World extends React.Component {
         return <h1>21122</h1>;
     }
 }
-
-
-window.onload = function () {
-    /*ReactDOM.render(<World/>, document.body);*/
-    ReactDOM.render(<a href='./html/home_one.html'>跳转</a>,document.body) ;
+window.onload = ()=> {
+    ReactDOM.render(<FloatingActionButtonExampleSimple/>, document.body)
 }
-
