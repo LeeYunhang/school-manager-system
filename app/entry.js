@@ -12,5 +12,4 @@ import FloatingActionButtonExampleSimple from './components/component.jsx';
 
 window.onload = ()=> {
     ReactDOM.render(<FloatingActionButtonExampleSimple/>, document.body)
-    alert(11111123123)
 }
