@@ -7,14 +7,17 @@ require('./css/index.css');
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+
 class World extends React.Component {
     render() {
-        return <h1>World</h1>;
+        return <h1>21122</h1>;
     }
 }
 
+
 window.onload = function () {
-    ReactDOM.render(<World/>, document.body);
+    /*ReactDOM.render(<World/>, document.body);*/
+    ReactDOM.render(<a href='./html/home_one.html'>跳转</a>,document.body) ;
 }
 
 

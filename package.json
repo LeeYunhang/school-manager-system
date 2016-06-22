@@ -20,10 +20,11 @@
     "jsx-loader": "^0.13.2",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
     "react": "^15.1.0",
