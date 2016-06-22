@@ -1,17 +1,23 @@
 /**
  * Created by mrcode on 16-6-22.
  */
-var React = require('react');
-var LocationStore = require('../stores/LocationStore');
-var LocationsAction = require('../actions/LocationsAction');
 
-var Locations = React.createClass({
+let React = require('react'),
+    LocationStore = require('../stores/LocationsStore'),
+    LocationsAction = require('../actions/LocationsAction');
+let Locations = React.createClass({
     getInitialState() {
         return LocationStore.getState();
     },
 
+    /**
+     * The method will be called when this component was rendered.
+     * */
     componentDidMount() {
+        //Tell localtionStore callback this.onChange when the state in store was changed.
         LocationStore.listen(this.onChange);
+
+        //Fecth the data.
         LocationsAction.fetchLocations();
     },
 

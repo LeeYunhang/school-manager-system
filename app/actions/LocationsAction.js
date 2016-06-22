@@ -10,17 +10,20 @@ class LocationsAction{
     }
 
     fetchLocations() {
-        return (dispatch) => {
-            dispatch();
+        return dispatch => {
+            dispatch();      // dispatch fetching action
+
+            // fetch the data from LocationSource
             LocationSource.fetch()
-                .then((locations) => {
+                .then((locations) => {      //fetch data successfully
                     this.updateLocations(locations);
                 })
-                .catch((errorMessage) => {
+                .catch((errorMessage) => {  //failed
                     this.locationsFailed(errorMessage);
                 });
-        }
+        };
     }
+
     locationsFailed(errorMessage) {
         return errorMessage;
     }
