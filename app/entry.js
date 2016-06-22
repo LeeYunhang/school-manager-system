@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom';
 
 class World extends React.Component {
     render() {
-        return <h1>21122</h1>;
+        return <h1>hello</h1>;
     }
 }
 window.onload = ()=> {
