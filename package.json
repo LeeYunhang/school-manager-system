@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --port 3000 --devtool eval --progress --colors --hot --content-base dist",
-    "build": "./node_modules/.bin/webpack"
+    "build": "./node_modules/.bin/webpack",
+    "start": "webpack ./server/app-bundle.js ./server/app.js && node server/app-bundle.js"
   },
   "author": "",
   "license": "ISC",
@@ -27,7 +28,10 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "express": "^4.14.0",
+    "material-ui": "^0.15.1",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "webpack-hot-middleware": "^2.10.0"
   }
 }
