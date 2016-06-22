@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="10af760c-dfaa-4ca2-accb-82f9ce0f8e7f" name="Default" comment="" />
     <list id="c30aca26-59e6-4120-8e6c-848c2d11db80" name="New changelist" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/index.css" afterPath="$PROJECT_DIR$/app/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/entry.js" afterPath="$PROJECT_DIR$/app/entry.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/component.jsx" afterPath="$PROJECT_DIR$/app/components/component.jsx" />
     </list>
     <ignored path="course-design.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -341,7 +336,7 @@
       <workItem from="1466490498317" duration="3560000" />
       <workItem from="1466494093216" duration="706000" />
       <workItem from="1466524160419" duration="886000" />
-      <workItem from="1466557794079" duration="5514000" />
+      <workItem from="1466557794079" duration="5648000" />
     </task>
     <task id="LOCAL-00001" summary="前台页面&#10;">
       <created>1466566109554</created>
@@ -354,7 +349,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10666000" />
+    <option name="totallyTimeSpent" value="10800000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
