@@ -2,8 +2,9 @@
  * Created by mrcode on 16-6-22.
  */
 
-let Locations = require('./Test.jsx')
 import React from 'react'
+import Locations from './Test.jsx'
+import Header from './header'
 
 /**
  * The Class is the component of the whole App
@@ -14,7 +15,10 @@ export default class App extends React.Component {
     }
 
     render(){
-        return <Locations/>;
+        return <div>
+            <Header />
+            <Locations/>
+        </div>;
     }
 }
 
