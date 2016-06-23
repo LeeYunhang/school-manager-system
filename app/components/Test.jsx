@@ -1,6 +1,15 @@
 /**
  * Created by mrcode on 16-6-22.
  */
+let contentStyle={
+    backgroundColor: 'yellow',
+    width: '1000px',
+    height: '400px',
+    margin: '0 auto',
+    padding: '0',
+    overflow: 'hidden',
+    textAlign: 'center',
+}
 
 let React = require('react'),
     LocationStore = require('../stores/LocationsStore'),
@@ -31,13 +40,15 @@ let Locations = React.createClass({
 
     render() {
         return (
-            <ul>
-                {this.state.locations.map((location) => {
-                    return (
-                        <li>{location.name}</li>
-                    );
-                })}
-            </ul>
+            <div style={contentStyle}>
+                <ul>
+                    {this.state.locations.map((location) => {
+                        return (
+                            <li>{location.name}</li>
+                        );
+                    })}
+                </ul>
+            </div>
         );
     }
 });

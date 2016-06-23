@@ -1,5 +1,4 @@
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
@@ -18,7 +17,6 @@ function handleActive(tab) {
 }
 
 const TabsExampleSimple = () => (
-    <MuiThemeProvider>
         <Tabs>
             <Tab label="Item One" >
                 <div>
@@ -53,7 +51,6 @@ const TabsExampleSimple = () => (
                 </div>
             </Tab>
         </Tabs>
-    </MuiThemeProvider>
 
 );
 

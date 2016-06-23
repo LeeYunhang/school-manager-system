@@ -3,8 +3,10 @@
  */
 
 import React from 'react'
-import Locations from './Test.jsx'
+import Content from './content'
 import Header from './header'
+import Footer from  './footer'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 /**
  * The Class is the component of the whole App
@@ -15,10 +17,11 @@ export default class App extends React.Component {
     }
 
     render(){
-        return <div>
-            <Header />
-            <Locations/>
-        </div>;
+        return (<MuiThemeProvider><div>
+            <Header/>
+            <Content/>
+            <Footer/>
+        </div></MuiThemeProvider>);
     }
 }
 
