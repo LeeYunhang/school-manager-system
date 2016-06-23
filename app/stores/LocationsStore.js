@@ -2,8 +2,8 @@
  * Created by mrcode on 16-6-22.
  */
 
-let [alt, LocationsAction] = [require('../alt'),require('../actions/LocationsAction')]
-
+let alt = require('../alt'),
+    LocationsAction = require('../actions/LocationsAction');
 class LocationsStore {
     constructor() {
         this.locations = [];
@@ -18,6 +18,13 @@ class LocationsStore {
     handleUpdateLocations(locations) {
         this.locations = locations;
     }
-}
 
+    handleFetchLocations() {
+        this.locations = [];
+    }
+
+    handleLocationsFailed(errorMessage) {
+        this.errorMessage = errorMessage;
+    }
+}
 module.exports = alt.createStore(LocationsStore, 'LocationsStore');

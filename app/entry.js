@@ -1,17 +1,12 @@
 /**
  * Created by mrcode on 16-6-20.
  */
-'use strict';
 require('./css/index.css');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/app.js';
 
-class World extends React.Component {
-    render() {
-        return <h1>hello</h1>;
-    }
-}
 window.onload = ()=> {
-    ReactDOM.render(<FloatingActionButtonExampleSimple/>, document.body)
-}
+    ReactDOM.render(<App />, document.body)
+};
