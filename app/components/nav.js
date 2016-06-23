@@ -18,37 +18,33 @@ function handleActive(tab) {
 
 const TabsExampleSimple = () => (
         <Tabs>
-            <Tab label="Item One" >
-                <div>
-                    <h2 style={styles.headline}>Tab One</h2>
-                    <p>
-                        This is an example tab.
-                    </p>
-                    <p>
-                        You can put any sort of HTML or react component in here. It even keeps the component state!
-                    </p>
-                    <Slider name="slider0" defaultValue={0.5} />
-                </div>
+            <Tab label="首页" >
             </Tab>
-            <Tab label="Item Two" >
-                <div>
-                    <h2 style={styles.headline}>Tab Two</h2>
-                    <p>
-                        This is another example tab.
-                    </p>
-                </div>
+
+
+            <Tab label="课程介绍" >
+
             </Tab>
-            <Tab
-                label="onActive"
-                route="/home"
-                onActive={handleActive}
-            >
-                <div>
-                    <h2 style={styles.headline}>Tab Three</h2>
-                    <p>
-                        This is a third example tab.
-                    </p>
-                </div>
+
+            <Tab label="教学团队" >
+
+            </Tab>
+
+            <Tab label="课程建设" >
+
+            </Tab>
+
+            <Tab label="课程资源" >
+
+            </Tab>
+
+
+            <Tab label="问题答疑" >
+
+            </Tab>
+
+            <Tab label="课程研究" >
+
             </Tab>
         </Tabs>
 

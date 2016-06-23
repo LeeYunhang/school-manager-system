@@ -3,22 +3,26 @@
  */
 import React from 'react'
 import Search from "./search"
+import Nav from "./nav"
 
 
 let style = {
     headerStyle: {
         backgroundColor: 'red',
-        width: '1000px',
+        width: '100%',
         boxSizing: 'border',
         height: '160px',
         margin: '0 auto',
         padding: '0',
         overflow: 'hidden',
     },
-    searchStyle: {
-        margin:'100px auto 0px auto', 
-        background:"gray",
+    navStyle:{
+        width:"100%",
     },
+    searchStyle: {
+        margin:'100px auto',
+        background:"gray",
+    }
 }
 
 class Header extends React.Component{
@@ -27,7 +31,8 @@ class Header extends React.Component{
     }
     render(){
         return (<div style={style.headerStyle}>
-          <Search style={style.searchStyle}/>
+            <div style={style.navStyle}><Nav/></div>
+            <div> <Search style={style.searchStyle}/></div>
         </div>);
     }
 }
