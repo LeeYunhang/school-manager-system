@@ -1,29 +1,17 @@
 
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
-import Slider from 'material-ui/Slider';
-
-const styles = {
-    headline: {
-        fontSize: 24,
-        paddingTop: 16,
-        marginBottom: 12,
-        fontWeight: 400,
-    },
-};
-
-function handleActive(tab) {
-    alert(`A tab with this route property ${tab.props.route} was activated.`);
-}
+import  Page1 from "./page1";
+import  Page2 from "./page2";
 
 const TabsExampleSimple = () => (
         <Tabs>
             <Tab label="首页" >
+               <page1></page1>
             </Tab>
-
-
+            
             <Tab label="课程介绍" >
-
+                <page2></page2>
             </Tab>
 
             <Tab label="教学团队" >
@@ -46,6 +34,7 @@ const TabsExampleSimple = () => (
             <Tab label="课程研究" >
 
             </Tab>
+            
         </Tabs>
 
 );

@@ -8,9 +8,6 @@ let contentStyle = {
     backgroundColor: 'yellow',
     width: '100%',
     height: '400px',
-    margin: '0 auto',
-    padding: '0',
-    overflow: 'hidden',
     textAlign: 'center',
 }
 

@@ -9,9 +9,6 @@ let headerStyle = {
     backgroundColor: 'red',
     width: '100%',
     height: '80px',
-    margin: '0 auto',
-    padding: '0',
-    overflow: 'hidden',
     textAlign: 'center',
 }
 

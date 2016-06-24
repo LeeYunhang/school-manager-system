@@ -39,8 +39,13 @@ const fruit = [
     'Watermelon',
 ];
 
+let style={
+    searchStyle:{
+        display:'inline-block',
+    }
+}
 const AutoCompleteExampleFilters = () => (
-    <div>
+    <div style={style.searchStyle}>
         <AutoComplete
             floatingLabelText="精品课程大全搜索"
             filter={AutoComplete.caseInsensitiveFilter}
