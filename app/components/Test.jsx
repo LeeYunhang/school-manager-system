@@ -1,18 +1,12 @@
-
-let contentStyle={
-    backgroundColor: 'yellow',
-    width: '1000px',
-    height: '400px',
-    margin: '0 auto',
-    padding: '0',
-    overflow: 'hidden',
-    textAlign: 'center',
-}
-
 let React = require('react'),
     LocationStore = require('../stores/LocationsStore'),
     GetUserAction = require('../actions/getUserAction');
-    Locations = React.createClass({
+
+let contentStyle={
+    textAlign: 'center',
+}
+
+Locations = React.createClass({
     getInitialState() {
         return LocationStore.getState();
     },

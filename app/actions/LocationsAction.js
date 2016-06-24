@@ -1,7 +1,7 @@
 /**
  * Created by mrcode on 16-6-22.
  */
-let alt = require('../alt'),
+let alt = require('../alt'), 
     LocationSource = require('../sources/LocationSource');
 
 class LocationsAction{

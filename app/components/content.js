@@ -2,6 +2,7 @@
  * Created by zyc on 2016/6/23.
  */
 import React from 'react';
+import Users from "./users";
 
 
 let contentStyle = {
@@ -17,6 +18,7 @@ class Content extends React.Component{
     }
     render(){
         return (<div id="content" style={contentStyle}>
+            <Users />
         </div>);
     }
 }
