@@ -2,31 +2,39 @@
  * Created by mrcode on 16-6-22.
  */
 import React from 'react'
-import img from './../../public/pic2.jpg'
-import Search from './search'
+import Search from "./search"
+import Nav from "./nav"
 
-let headerStyle = {
-    backgroundColor: 'lightgray',
-    width: '100%',
-    height: '150px',
-    margin: '0',
-    padding: '0',
-    overflow: 'hidden',
-    backgroundImage: `url(${img})`,
-    textAlign: 'center',
+
+let style = {
+    headerStyle: {
+        backgroundColor: 'red',
+        width: '100%',
+        boxSizing: 'border',
+        height: '160px',
+        margin: '0 auto',
+        padding: '0',
+        overflow: 'hidden',
+    },
+    navStyle:{
+        width:"100%",
+    },
+    searchStyle: {
+        margin:'100px auto',
+        background:"gray",
+    }
 }
+
 class Header extends React.Component{
     constructor(){
         super()
     }
-
     render(){
-        return <header style={headerStyle}>
-            <h1>重庆理工大学 你好</h1>
-            <Search/>
-        </header>;
-
+        return (<div style={style.headerStyle}>
+            <div style={style.navStyle}><Nav/></div>
+            <div> <Search style={style.searchStyle}/></div>
+        </div>);
     }
 }
-
 export default Header
+

@@ -27,5 +27,4 @@ class LocationsStore {
         this.errorMessage = errorMessage;
     }
 }
-
 module.exports = alt.createStore(LocationsStore, 'LocationsStore');
