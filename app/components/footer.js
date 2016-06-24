@@ -16,7 +16,7 @@ let style={
         marginTop:"3px",
         paddingTop:"7px",
         width: '100%',
-        height: '60px',
+        height: '67px',
         textAlign: 'center',
     }
 }

@@ -16,7 +16,7 @@ class Content extends React.Component{
         super()
     }
     render(){
-        return (<div style={contentStyle}>
+        return (<div id="content" style={contentStyle}>
         </div>);
     }
 }
