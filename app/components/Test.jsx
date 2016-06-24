@@ -1,9 +1,9 @@
 /**
- * Created by mrcode on 16-6-22.
- */
+         * Created by mrcode on 16-6-22.
+         */
 
-let React = require('react'),
-    LocationStore = require('../stores/LocationsStore'),
+        let React = require('react'),
+        LocationStore = require('../stores/LocationsStore'),
     LocationsAction = require('../actions/LocationsAction');
 let Locations = React.createClass({
     getInitialState() {

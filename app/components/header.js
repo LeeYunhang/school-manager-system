@@ -2,7 +2,8 @@
  * Created by mrcode on 16-6-22.
  */
 import React from 'react'
-import img from './pic2.jpg'
+import img from './../../public/pic2.jpg'
+import Search from './search'
 
 let headerStyle = {
     backgroundColor: 'lightgray',
@@ -22,7 +23,9 @@ class Header extends React.Component{
     render(){
         return <header style={headerStyle}>
             <h1>重庆理工大学 你好</h1>
+            <Search/>
         </header>;
+
     }
 }
 
