@@ -7,6 +7,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Header from './header'
 import  Content from "./content";
 import Footer from "./footer";
+import Test from "./Test";
 
 
 /**
@@ -20,7 +21,7 @@ export default class App extends React.Component {
     render(){
         return (<MuiThemeProvider><div>
             <Header/>
-            <Content/>
+            <Content><Test></Test></Content>
             <Footer/>
         </div></MuiThemeProvider>);
     }

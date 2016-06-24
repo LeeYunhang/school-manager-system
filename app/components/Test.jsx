@@ -11,7 +11,7 @@ let contentStyle={
 
 let React = require('react'),
     LocationStore = require('../stores/LocationsStore'),
-    LocationsAction = require('../actions/LocationsAction');
+    GetUserAction = require('../actions/getUserAction');
     Locations = React.createClass({
     getInitialState() {
         return LocationStore.getState();
@@ -23,7 +23,7 @@ let React = require('react'),
     componentDidMount() {
         LocationStore.listen(this.onChange);
 
-        LocationsAction.fetchLocations();
+        GetUserAction.fetchLocations();
     },
 
     componentWillUnmount() {

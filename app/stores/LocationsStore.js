@@ -3,7 +3,7 @@
  */
 
 let alt = require('../alt'),
-    LocationsAction = require('../actions/LocationsAction');
+    LocationsAction = require('../actions/getUserAction');
 class LocationsStore {
     constructor() {
         this.locations = [];

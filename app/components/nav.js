@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
-import UserAjax from '../../public/js/useAjax'
+
 const styles = {
     headline: {
         fontSize: 24,
@@ -17,7 +17,7 @@ function handleActive(tab) {
 
 const TabsExampleSimple = () => (
     <Tabs>
-        <Tab label="首    页"  onActive={UserAjax()}  value="a">
+        <Tab label="首    页"   value="a">
 
         </Tab>
         <Tab label="课程介绍"  value="2">
