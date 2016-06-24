@@ -7,10 +7,7 @@ import React from 'react';
 let contentStyle = {
     backgroundColor: 'yellow',
     width: '100%',
-    height: '400px',
-    margin: '0 auto',
-    padding: '0',
-    overflow: 'hidden',
+    height: '450px',
     textAlign: 'center',
 }
 
@@ -19,7 +16,7 @@ class Content extends React.Component{
         super()
     }
     render(){
-        return (<div style={contentStyle}>
+        return (<div id="content" style={contentStyle}>
         </div>);
     }
 }

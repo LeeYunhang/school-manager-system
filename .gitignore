@@ -3,3 +3,6 @@ node_modules/
 
 # bundle.js
 dist/bundle.js
+
+# .idea
+.idea/

@@ -8,22 +8,22 @@ import Nav from "./nav"
 
 let style = {
     headerStyle: {
-        backgroundColor: 'red',
+        backgroundColor: 'rgb(0, 188, 212)',
         width: '100%',
-        boxSizing: 'border',
-        height: '160px',
         margin: '0 auto',
-        padding: '0',
-        overflow: 'hidden',
     },
     navStyle:{
-        width:"100%",
+        display: 'inline-block',
+        width:"62%",
+        height:"80px"
     },
     searchStyle: {
-        margin:'100px auto',
-        background:"gray",
+        display: 'inline-block',
+        width: '28%',
+        paddingLeft:"100px",
     }
 }
+
 
 class Header extends React.Component{
     constructor(){
@@ -32,7 +32,7 @@ class Header extends React.Component{
     render(){
         return (<div style={style.headerStyle}>
             <div style={style.navStyle}><Nav/></div>
-            <div> <Search style={style.searchStyle}/></div>
+            <div style={style.searchStyle}><font>全站搜索：</font> <Search /></div>
         </div>);
     }
 }

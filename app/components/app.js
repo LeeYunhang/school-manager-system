@@ -3,10 +3,11 @@
  */
 
 import React from 'react'
-import Content from './content'
-import Header from './header'
-import Footer from  './footer'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Header from './header'
+import  Content from "./content";
+import Footer from "./footer";
+
 
 /**
  * The Class is the component of the whole App
