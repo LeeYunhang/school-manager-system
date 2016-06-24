@@ -7,7 +7,7 @@
     "test": "node ./test/test.js --harmony",
     "dev": "webpack-dev-server --port 3000 --devtool eval --progress --colors --hot --content-base dist",
     "build": "./node_modules/.bin/webpack",
-    "start": "node ./server.app.js --harmony"
+    "start": "node ./server/app.js --harmony"
   },
   "author": "",
   "license": "ISC",
