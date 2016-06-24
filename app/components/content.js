@@ -7,7 +7,7 @@ import React from 'react';
 let contentStyle = {
     backgroundColor: 'yellow',
     width: '100%',
-    height: '400px',
+    height: '450px',
     textAlign: 'center',
 }
 

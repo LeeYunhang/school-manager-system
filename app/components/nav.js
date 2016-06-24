@@ -7,11 +7,11 @@ import  Page2 from "./page2";
 const TabsExampleSimple = () => (
         <Tabs>
             <Tab label="首页" >
-               <page1></page1>
+              
             </Tab>
             
             <Tab label="课程介绍" >
-                <page2></page2>
+                
             </Tab>
 
             <Tab label="教学团队" >
@@ -19,7 +19,7 @@ const TabsExampleSimple = () => (
             </Tab>
 
             <Tab label="课程建设" >
-
+            
             </Tab>
 
             <Tab label="课程资源" >
