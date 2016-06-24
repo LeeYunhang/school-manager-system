@@ -5,6 +5,7 @@ let alt = require('../alt'),
     LocationSource = require('../sources/LocationSource');
 
 class LocationsAction{
+
     updateLocations(locations) {
         return locations;
     }
