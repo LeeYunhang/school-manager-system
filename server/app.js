@@ -20,8 +20,5 @@ app.use(express.static('../dist'));
 app.use(webpackMiddleware(compiler));
 app.use(webpackHotMiddleware(compiler));
 app.use('/', router);
-//app.get('*', function response(req, res) {
-//    res.sendFile(path.join(__dirname, '../dist/index.html'));
-//});
 
 app.listen(3000);

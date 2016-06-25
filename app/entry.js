@@ -5,13 +5,13 @@ require('./css/index.css');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/app.js';
+ import App from './components/app.js';
 
 
 
 
 window.onload = ()=> {
     ReactDOM.render(
-       <App></App>
-            , document.getElementById('app'));
+       <App/>,document.getElementById("ccc"));
+
 };

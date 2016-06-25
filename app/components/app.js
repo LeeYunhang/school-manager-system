@@ -5,7 +5,7 @@
 import React from 'react'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Header from './header'
-import  Content from "./content";
+import Content from "./content";
 import Footer from "./footer";
 
 

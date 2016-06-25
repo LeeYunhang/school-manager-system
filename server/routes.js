@@ -18,7 +18,16 @@ router.get('/', (req, res) =>
 router.get('/test', (req, res) => res.send('hello world'));
 
 router.get('/users', (req, res)=> {
-    user(data =>res.send(JSON.stringify(data)))
+    user((err, data) => {
+        let response = {}
+        if(err){
+            response.error = '不能获取用户信息'
+        } else {
+            response.data = data
+        }
+
+        res.send(response)
+    })
 })
 
 module.exports = router;
