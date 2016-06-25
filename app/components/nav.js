@@ -14,7 +14,6 @@ const styles = {
 const TabsExampleSimple = () => (
     <Tabs>
         <Tab label="首    页"  value="a">
-
         </Tab>
         <Tab label="课程介绍"  value="2">
           

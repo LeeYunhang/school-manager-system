@@ -3,6 +3,7 @@
  */
 import React from 'react';
 import Users from "./users";
+import {Link} from 'react-router'
 
 
 let contentStyle = {
@@ -18,7 +19,8 @@ class Content extends React.Component{
     }
     render(){
         return (<div id="content" style={contentStyle}>
-            <Users />
+            {this.props.children}
+            <Link to="/page1">PAGE1</Link>
         </div>);
     }
 }
