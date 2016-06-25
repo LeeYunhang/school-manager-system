@@ -3,7 +3,6 @@
  */
 
 let Alt = require('alt');
-
 //导出Alt的实例
 module.exports = new Alt();
 

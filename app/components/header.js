@@ -8,19 +8,13 @@ import Nav from "./nav"
 
 let style = {
     headerStyle: {
-        backgroundColor: 'rgb(0, 188, 212)',
         width: '100%',
         margin: '0 auto',
     },
     navStyle:{
         display: 'inline-block',
-        width:"62%",
+        width:"100%",
         height:"80px"
-    },
-    searchStyle: {
-        display: 'inline-block',
-        width: '28%',
-        paddingLeft:"100px",
     }
 }
 
@@ -32,7 +26,6 @@ class Header extends React.Component{
     render(){
         return (<div style={style.headerStyle}>
             <div style={style.navStyle}><Nav/></div>
-            <div style={style.searchStyle}><font>全站搜索：</font> <Search /></div>
         </div>);
     }
 }

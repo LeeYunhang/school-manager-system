@@ -2,7 +2,7 @@
  * Created by zyc on 2016/6/24.
  */
 
-    let qwest = require( "qwest");
+let qwest = require( "qwest");
      alt = require("../alt");
 
 class getUserAction{

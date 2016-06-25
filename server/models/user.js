@@ -18,8 +18,8 @@ if(process.argv.length >= 4){
     connection = mysql.createConnection({
         host     : 'localhost',
         user     : 'root',
-        password : 'qazqaz',
-        database : 'test',
+        password : '',
+        database : 'comcoursenetwork',
     });
 }
 

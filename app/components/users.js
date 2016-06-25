@@ -9,8 +9,6 @@ let contentStyle={
     textAlign: 'center',
 }
 
-
-
 export default class Users extends React.Component{
      componentDidMount(){
          UsersStore.listen(this.onChange.bind(this))

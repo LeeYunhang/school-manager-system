@@ -1,6 +1,6 @@
-
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
+import Slider from 'material-ui/Slider';
 
 const styles = {
     headline: {
@@ -11,35 +11,45 @@ const styles = {
     },
 };
 
+function handleActive(tab) {
+    alert(`A tab with this route property ${tab.props.route} was activated.`);
+}
+
 const TabsExampleSimple = () => (
     <Tabs>
-        <Tab label="首    页"  value="a">
+        <Tab label="Item One" >
+            <div>
+                <h2 style={styles.headline}>Tab One</h2>
+                <p>
+                    This is an example tab.
+                </p>
+                <p>
+                    You can put any sort of HTML or react component in here. It even keeps the component state!
+                </p>
+                <Slider name="slider0" defaultValue={0.5} />
+            </div>
         </Tab>
-        <Tab label="课程介绍"  value="2">
-          
+        <Tab label="Item Two" >
+            <div>
+                <h2 style={styles.headline}>Tab Two</h2>
+                <p>
+                    This is another example tab.
+                </p>
+            </div>
         </Tab>
-
-        <Tab label="教学团队"  value="3">
-
-        </Tab>
-
-        <Tab label="课程建设" value="4" >
-
-        </Tab>
-
-        <Tab label="课程资源"  value="5">
-
-        </Tab>
-
-
-        <Tab label="问题答疑" value="6" >
-
-        </Tab>
-
-        <Tab label="课程研究"  value="7">
-
+        <Tab
+            label="onActive"
+           
+        >
+            <div>
+                <h2 style={styles.headline}>Tab Three</h2>
+                <p>
+                    This is a third example tab.
+                </p>
+            </div>
         </Tab>
     </Tabs>
 );
+
 export default TabsExampleSimple;
 
